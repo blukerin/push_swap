@@ -12,7 +12,7 @@
 
 #include "../includes/push_swap.h"
 
-void	swap(t_list **stack)
+static void	swap(t_list **stack)
 {
 	t_list	*ptr1;
 	t_list	*ptr2;

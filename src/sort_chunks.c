@@ -12,7 +12,7 @@
 
 #include "../includes/push_swap.h"
 
-int	rb_or_rrb(t_list **stack_b, int size)
+static int	rb_or_rrb(t_list **stack_b, int size)
 {
 	int		biggest;
 	int		i;
@@ -39,7 +39,7 @@ int	rb_or_rrb(t_list **stack_b, int size)
 		return (1);
 }
 
-int	is_the_biggest(t_list **stack_b)
+static int	is_the_biggest(t_list **stack_b)
 {
 	t_list	*ptr;
 	int		biggest;
@@ -55,7 +55,7 @@ int	is_the_biggest(t_list **stack_b)
 	return (1);
 }
 
-void	b_to_a(t_list **stack_a, t_list **stack_b)
+static void	b_to_a(t_list **stack_a, t_list **stack_b)
 {
 	int	size;
 
@@ -74,7 +74,7 @@ void	b_to_a(t_list **stack_a, t_list **stack_b)
 	}
 }
 
-void	a_to_b(t_list **stack_a, t_list **stack_b, int chunk_size)
+static void	a_to_b(t_list **stack_a, t_list **stack_b, int chunk_size)
 {
 	int	i;
 

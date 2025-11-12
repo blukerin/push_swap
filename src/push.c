@@ -12,7 +12,7 @@
 
 #include "../includes/push_swap.h"
 
-void	push(t_list **src, t_list **dst)
+static void	push(t_list **src, t_list **dst)
 {
 	t_list	*move;
 

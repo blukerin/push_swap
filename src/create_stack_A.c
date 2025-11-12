@@ -32,7 +32,7 @@ int	check_duplicates(t_list **stack)
 	return (1);
 }
 
-long	ft_atol(char *str, int *err)
+static long	ft_atol(char *str, int *err)
 {
 	long long	r;
 	int			i;
@@ -85,7 +85,7 @@ void	stack_args(t_list **stack_a, char *str)
 	ft_lstadd_back(stack_a, node);
 }
 
-int	stack_split_2(t_list **stack_a, char *str)
+static int	stack_split_2(t_list **stack_a, char *str)
 {
 	t_list	*node;
 	long	content;

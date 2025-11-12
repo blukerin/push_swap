@@ -12,7 +12,7 @@
 
 #include "../includes/push_swap.h"
 
-void	rotate(t_list **stack)
+static void	rotate(t_list **stack)
 {
 	t_list	*temp;
 	t_list	*last;

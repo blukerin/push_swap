@@ -12,7 +12,7 @@
 
 #include "../includes/push_swap.h"
 
-void	little_to_b(t_list **stack_a, t_list **stack_b, int size, int i)
+static void	little_to_b(t_list **stack_a, t_list **stack_b, int size, int i)
 {
 	int		little;
 	int		little_pos;
