@@ -28,8 +28,6 @@ $(NAME): $(OBJS)
 $(EXEC): $(NAME) $(MAIN_SRC)
 	$(CC) $(CFLAGS) $(MAIN_SRC) $(NAME) -o $(EXEC)
 
-bonus : $(NAME) $(BONUS_OBJ)
-	$(AR) rcs $(NAME) $(OBJS) $(BONUS_OBJ)
 
 clean:
 	@rm -f $(OBJS) $(BONUS_OBJ)
